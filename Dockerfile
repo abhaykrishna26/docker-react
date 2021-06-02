@@ -8,7 +8,7 @@ WORKDIR '/app'
 COPY package.json .
 # To prevent repeated npm installs anytime we make any change, we'd copy over the package.json and install things first
 
-RUN npm install -g npm@7.15.1
+RUN npm i
 
 COPY . .
 # Copy the rest of the project over to the /app folder in the container
